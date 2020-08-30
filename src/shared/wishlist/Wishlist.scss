@@ -1,0 +1,14 @@
+.wishlist {
+    &-book {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    img {
+      max-height: 40px;
+      margin-right: 10px;
+   }
+  }
+

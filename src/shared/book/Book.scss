@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+.book {
+    display: block;
+    padding: $spacing-xs;
+    border: 1px solid silver;
+    margin-top: .5rem;
+    text-align: center;
+
+    p {
+      word-break: break-word;
+    }
+
+    button {
+      width: 100%;
+      margin-top: $spacing-xs;
+    }
+
+    img {
+      display: block;
+    }
+
+    .book-author {
+      margin-left: 5px;
+    }
+
+    .book-image-content {
+      padding: 0 $spacing-xs $spacing-xs 0;
+      max-width: 150px;
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: $media-query-med) {
+    .book {
+      display: flex;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }

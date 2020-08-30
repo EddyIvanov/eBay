@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+input {
+    font-size: 0.8rem;
+    border: none;
+    border-bottom: 1px solid $gray40;
+    padding: $spacing-xxs;
+}

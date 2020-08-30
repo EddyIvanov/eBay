@@ -1,0 +1,114 @@
+@import './variables';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $blue-accent;
+  color: $white;
+  padding: $spacing-3xs $spacing-xs;
+
+  button {
+    padding: 0 $spacing-xs;
+  }
+}
+
+.header--content {
+  display: flex;
+  height: 10vh;
+  > * {
+    display: flex;
+    align-items: center;
+  }
+}
+
+main {
+  padding: $spacing-xs $spacing-xxs;
+  min-width: 300px;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.sidebar {
+  flex-grow: 1;
+  min-width: 200px;
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: $media-query-med) {
+  .sidebar {
+    padding-left: $spacing-med;
+  }
+}
+
+.btn {
+  height: 28px;
+  padding: $spacing-xxs;
+  border: 0;
+  border-radius: $border-radius;
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: #fff;
+  }
+  &--asLink {
+    background-color: transparent;
+    border: 0;
+    color: $blue-accent;
+    font-size: inherit;
+
+    &:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+.empty {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  font-size: 1.5rem;
+  color: $gray40;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.book--container {
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+@media screen and (min-width: $media-query-med) {
+  .book--container {
+    flex-flow: row nowrap;
+  }
+}
+
+.search-params {
+  flex-grow: 3;
+
+  input {
+    margin-bottom: 15px;
+  }
+}
+
+.info {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
