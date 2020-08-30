@@ -42,5 +42,3 @@ Please make sure you are not spamming the API with too many calls. No more than 
 ### Exercise 3: Unit tests
 Write unit tests for your code.
 
-## How to submit code?
-Please upload completed code to a personal git repository and share the link to your repository with us.
