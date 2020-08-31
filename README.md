@@ -5,28 +5,28 @@ Please complete the coding exercises below, upload code to a personal git repo, 
 
 #### Please don't fork this repo. Download/Clone the repository, finish the exercise and upload it as a new repository in your github account. Share with us the link for that repository
 
-## Prerequisites 
+## Prerequisites
 To build and run the sample code please make sure you have the following prerequisites
 - NodeJs v13.12 or higher
 - Yarn
 
 ## Getting Started
-This repository contains a sample ReactJs application.   When launched the sample web application displays a "search" box where you can enter a book name and press ENTER. Results matching your input will be displayed as a JSON String.  
+This repository contains a sample ReactJs application.   When launched the sample web application displays a "search" box where you can enter a book name and press ENTER. Results matching your input will be displayed as a JSON String.
 You can follow the instruction below to launch the sample application.
 1. Install dependencies using `yarn`
-2. Launch the web application using `yarn start` 
+2. Launch the web application using `yarn start`
 3. Navigate to [http://localhost:3000](http://localhost:3000)
-4. You can run tests using `yarn test` 
+4. You can run tests using `yarn test`
 
 Please feel free to make your own decisions about Web UI development. Though you are can use any UI library to build the web page, please see if you can avoid them. Also, you may use any state management technique.
 
 ## Coding Exercise
-Please complete the following coding exercises and submit your code to us.  
+Please complete the following coding exercises and submit your code to us.
 
-### Exercise 1: Design a web page in line with the mockup. 
-> Requirement 1: As a user, I want to see a responsive page similar to the mockup. Sample JSON response is returned when the search term is entered and submitted in the search box. 
+### Exercise 1: Design a web page in line with the mockup.
+> Requirement 1: As a user, I want to see a responsive page similar to the mockup. Sample JSON response is returned when the search term is entered and submitted in the search box.
 
-> Requirement 2: As a user, I want to add books to my whislist displayed on right section of the web page. 
+> Requirement 2: As a user, I want to add books to my whislist displayed on right section of the web page.
 
 > Some helpful fields available in the response that helps you in building the mocks are:  image (coverUrl), title, author, publisher, published & description
 

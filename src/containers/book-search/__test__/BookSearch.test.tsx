@@ -25,7 +25,9 @@ describe('BookSearch', () => {
         });
         global.fetch = mockFetch;
 
-        render(<BookSearch />);
+        act(() => {
+            render(<BookSearch />);
+        });
         const searchInput = screen.getByPlaceholderText(/Search for books to add to your reading list and press Enter/i);
 
         expect(searchInput).toBeInTheDocument();
@@ -62,7 +64,9 @@ describe('BookSearch', () => {
         });
         global.fetch = mockFetch;
 
-        render(<BookSearch />);
+        act(() => {
+            render(<BookSearch />);
+        });
         const searchHelpButton = screen.getByRole('button', { name: /Javascript/i });
         expect(searchHelpButton).toBeInTheDocument();
 
@@ -118,7 +122,9 @@ describe('BookSearch', () => {
         });
         global.fetch = mockFetch;
 
-        render(<BookSearch />);
+        act(() => {
+            render(<BookSearch />);
+        });
 
         const searchInput = screen.getByPlaceholderText(/Search for books to add to your reading list and press Enter/i);
 

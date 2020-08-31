@@ -7,6 +7,8 @@ import { throttle } from 'lodash-es';
 import ErrorMessage from "../../shared/errorMessage";
 import Input from "../../shared/input";
 import SearchTip from "../../shared/searchTips/SearchTips";
+import Loading from "../../shared/loading";
+import NoResults from "../../shared/noResults";
 
 const THROTTLE_DELAY = 500;
 
@@ -82,10 +84,10 @@ const BookSearch = () => {
                     <SearchTip text="Try searching for a topic, for example" suggestion="Javascript" onSearch={handSearch} />
                 )}
                 {loading &&
-                    <div className="info">Loading...</div>
+                    <Loading />
                 }
-                {!loading && bookTypeToSearch !== "" && allAvailableBooks.totalItems == 0 &&
-                    <div className="info">No search results</div>
+                {!loading && bookTypeToSearch !== "" && allAvailableBooks.totalItems === 0 &&
+                    <NoResults text="No search results" />
                 }
                 {allAvailableBooks && allAvailableBooks.totalItems > 0 &&
                     <BookList
